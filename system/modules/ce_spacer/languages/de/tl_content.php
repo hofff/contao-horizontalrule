@@ -31,6 +31,6 @@
 /**
  * Fields
  */
-$GLOBALS['TL_LANG']['tl_content']['anchor']                  = array('Zielanker', 'Anker zu dem der "nach oben" Link springen soll.');
+$GLOBALS['TL_LANG']['tl_content']['anchor'] = array('Zielanker', 'Anker zu dem der "nach oben" Link führen soll.');
 
 ?>
