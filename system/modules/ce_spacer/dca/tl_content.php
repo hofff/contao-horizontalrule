@@ -28,7 +28,7 @@
  */
 
 
-$GLOBALS['TL_DCA']['tl_content']['palettes']['spacer']     = '{type_legend},type,anchor;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID,space';
+$GLOBALS['TL_DCA']['tl_content']['palettes']['spacer']     = '{type_legend},type,anchor;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID';
 
 $GLOBALS['TL_DCA']['tl_content']['fields']['anchor'] = array
 (
