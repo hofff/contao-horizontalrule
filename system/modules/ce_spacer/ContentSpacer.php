@@ -1,8 +1,12 @@
 <?php if (!defined('TL_ROOT')) die('You can not access this file directly!');
 
 /**
+ * Content Spacer
+ * Copyright (C) 2011 Tristan Lins
+ *
+ * Extension for:
  * Contao Open Source CMS
- * Copyright (C) 2005-2010 Leo Feyer
+ * Copyright (C) 2005-2011 Leo Feyer
  *
  * Formerly known as TYPOlight Open Source CMS.
  *
@@ -21,17 +25,17 @@
  * Software Foundation website at <http://www.gnu.org/licenses/>.
  *
  * PHP version 5
- * @copyright  InfinitySoft 2010
+ * @copyright  InfinitySoft 2010,2011
  * @author     Tristan Lins <tristan.lins@infinitysoft.de>
  * @package    ContentSpacer
- * @license    http://opensource.org/licenses/lgpl-3.0.html
+ * @license    LGPL
+ * @filesource
  */
 
 
 /**
  * Class ContentSpacer
  *
- * 
  * @copyright  Tristan Lins 2010
  * @author     Tristan Lins <info@infinitysoft.de>
  * @package    ContentSpacer
@@ -44,7 +48,11 @@ class ContentSpacer extends ContentElement
 	 * @var string
 	 */
 	protected $strTemplate = 'ce_spacer';
-	
+
+	/**
+	 * @see ContentElement::compile()
+	 * @return void
+	 */
 	protected function compile()
 	{
 		$this->Template->anchor = $this->anchor;
