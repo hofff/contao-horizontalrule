@@ -32,5 +32,3 @@
  * Miscellaneous
  */
 $GLOBALS['TL_LANG']['CTE']['spacer'] = array('Trennlinie', 'Erzeugt eine Trennlinie (hr) mit einem "nach oben" Link.');
-
-?>

@@ -32,5 +32,3 @@
  * Back end modules
  */
 $GLOBALS['TL_LANG']['MOD']['ce_spacer']    = 'Trennlinie';
-
-?>

@@ -38,4 +38,3 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['anchor'] = array
 	'eval'                    => array('tl_class'=>'w50')
 );
 
-?>
