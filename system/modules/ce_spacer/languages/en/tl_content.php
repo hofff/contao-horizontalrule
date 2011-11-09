@@ -31,4 +31,6 @@
 /**
  * Fields
  */
-$GLOBALS['TL_LANG']['tl_content']['anchor'] = array('Zielanker', 'Anker zu dem der "nach oben" Link führen soll.');
+$GLOBALS['TL_LANG']['tl_content']['addAnchor']   = array('Add anchor', 'Add an anchor after the spacer.');
+$GLOBALS['TL_LANG']['tl_content']['anchor']      = array('Zielanker', 'Please type in the anchor tarket name.');
+$GLOBALS['TL_LANG']['tl_content']['anchorTitle'] = array('Ankertitel', 'Please type in the anchor link title.');

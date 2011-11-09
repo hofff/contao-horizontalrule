@@ -28,13 +28,30 @@
  */
 
 
-$GLOBALS['TL_DCA']['tl_content']['palettes']['spacer']     = '{type_legend},type,anchor;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID';
+$GLOBALS['TL_DCA']['tl_content']['palettes']['__selector__'][] = 'addAnchor';
+$GLOBALS['TL_DCA']['tl_content']['palettes']['spacer']     = '{type_legend},type,addAnchor;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID';
+$GLOBALS['TL_DCA']['tl_content']['subpalettes']['addAnchor'] = 'anchor,anchorTitle';
+
+$GLOBALS['TL_DCA']['tl_content']['fields']['addAnchor'] = array
+(
+	'label'                   => &$GLOBALS['TL_LANG']['tl_content']['addAnchor'],
+	'default'                 => '1',
+	'inputType'               => 'checkbox',
+	'eval'                    => array('submitOnChange'=>true)
+);
 
 $GLOBALS['TL_DCA']['tl_content']['fields']['anchor'] = array
 (
 	'label'                   => &$GLOBALS['TL_LANG']['tl_content']['anchor'],
 	'default'                 => 'top',
 	'inputType'               => 'text',
-	'eval'                    => array('tl_class'=>'w50')
+	'eval'                    => array('mandatory'=>true, 'maxlength'=>255, 'tl_class'=>'w50')
 );
 
+$GLOBALS['TL_DCA']['tl_content']['fields']['anchorTitle'] = array
+(
+	'label'                   => &$GLOBALS['TL_LANG']['tl_content']['anchorTitle'],
+	'default'                 => 'top',
+	'inputType'               => 'text',
+	'eval'                    => array('mandatory'=>true, 'maxlength'=>255, 'tl_class'=>'w50')
+);

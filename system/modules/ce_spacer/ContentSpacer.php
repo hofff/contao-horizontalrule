@@ -55,7 +55,16 @@ class ContentSpacer extends ContentElement
 	 */
 	protected function compile()
 	{
-		$this->Template->anchor = $this->anchor;
+		if ($this->addAnchor)
+		{
+			$this->Template->anchor = $this->anchor;
+			$this->Template->anchorTitle = $this->anchorTitle;
+		}
+		else
+		{
+			$this->Template->anchor = '';
+			$this->Template->anchorTitle = '';
+		}
 	}
 	
 }
