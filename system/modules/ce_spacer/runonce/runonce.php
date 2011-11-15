@@ -40,7 +40,7 @@
  * @author     Tristan Lins <info@infinitysoft.de>
  * @package    ContentSpacer
  */
-class CeSpacerRunonce extends Backend
+class CeSpacerRunonce extends System
 {
 	/**
 	 * @var Database
@@ -54,6 +54,8 @@ class CeSpacerRunonce extends Backend
 	 */
 	public function run()
 	{
+		$this->import('Database');
+		
 		if ($this->Database->fieldExists('anchor', 'tl_content', false))
 		{
 			if (!$this->Database->fieldExists('addAnchor', 'tl_content', false))
