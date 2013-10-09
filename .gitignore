@@ -1,4 +1,14 @@
-.project
-.settings
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs 
 .buildpath
-.idea
+.project
+.settings/
+.build/
+.idea/
+nbproject/
+
+# Dependencies
+vendor/

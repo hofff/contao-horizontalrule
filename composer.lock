@@ -1,0 +1,443 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "159543910b8669294852c5e6fecae00d",
+    "packages": [
+        {
+            "name": "bit3/contao-meta-palettes",
+            "version": "1.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bit3/contao-meta-palettes.git",
+                "reference": "8cb6ce1b073733e45d0567c47c6f9357fe066704"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bit3/contao-meta-palettes/zipball/8cb6ce1b073733e45d0567c47c6f9357fe066704",
+                "reference": "8cb6ce1b073733e45d0567c47c6f9357fe066704",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-installer": "*",
+                "contao/core": ">=2.11,<4",
+                "php": ">=5.3"
+            },
+            "replace": {
+                "contao-legacy/metapalettes": "*"
+            },
+            "require-dev": {
+                "bit3/php-coding-standard": "@dev",
+                "squizlabs/php_codesniffer": "1.*"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "sources": {
+                        "contao": "system/modules/metapalettes"
+                    }
+                },
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Tristan Lins",
+                    "email": "tristan.lins@bit3.de",
+                    "homepage": "http://bit3.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "MetaPalettes extension for Contao OpenSource CMS",
+            "homepage": "http://bit3.de",
+            "keywords": [
+                "contao",
+                "page",
+                "title"
+            ],
+            "time": "2013-09-23 15:07:34"
+        },
+        {
+            "name": "bit3/contao-twig",
+            "version": "1.6.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bit3/contao-twig.git",
+                "reference": "f8a6511778798502f8327c797a2412dbf7fac85b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bit3/contao-twig/zipball/f8a6511778798502f8327c797a2412dbf7fac85b",
+                "reference": "f8a6511778798502f8327c797a2412dbf7fac85b",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-installer": "*",
+                "contao/core": ">=2.11,<4",
+                "php": ">=5.3",
+                "twig/twig": "1.*"
+            },
+            "replace": {
+                "contao-legacy/twig": "*"
+            },
+            "require-dev": {
+                "bit3/php-coding-standard": "@dev",
+                "squizlabs/php_codesniffer": "1.*"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "sources": {
+                        "contao": "system/modules/twig"
+                    }
+                },
+                "branch-alias": {
+                    "dev-master": "1.6.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Tristan Lins",
+                    "email": "tristan.lins@bit3.de",
+                    "homepage": "http://bit3.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Twig integration for Contao OpenSource CMS",
+            "homepage": "http://bit3.de",
+            "keywords": [
+                "contao",
+                "template",
+                "theme",
+                "twig"
+            ],
+            "time": "2013-09-23 15:08:43"
+        },
+        {
+            "name": "contao-community-alliance/composer-installer",
+            "version": "1.6.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ContaoCommunityAlliance/ComposerInstaller.git",
+                "reference": "54a0d252b2f3248733b1c19a7cd9edbc18cf0048"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ContaoCommunityAlliance/ComposerInstaller/zipball/54a0d252b2f3248733b1c19a7cd9edbc18cf0048",
+                "reference": "54a0d252b2f3248733b1c19a7cd9edbc18cf0048",
+                "shasum": ""
+            },
+            "require-dev": {
+                "composer/composer": "1.0.*@dev"
+            },
+            "type": "composer-installer",
+            "extra": {
+                "class": "ContaoCommunityAlliance\\ComposerInstaller\\ModuleInstaller"
+            },
+            "autoload": {
+                "psr-0": {
+                    "ContaoCommunityAlliance\\ComposerInstaller": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPLv3"
+            ],
+            "time": "2013-09-13 09:10:36"
+        },
+        {
+            "name": "contao/core",
+            "version": "3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ContaoCommunityAlliance/composerized-contao-core.git",
+                "reference": "8b030e1761aa1ec7dc700dbde10e77be3573ce82"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ContaoCommunityAlliance/composerized-contao-core/zipball/8b030e1761aa1ec7dc700dbde10e77be3573ce82",
+                "reference": "8b030e1761aa1ec7dc700dbde10e77be3573ce82",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "system/modules"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Leo Feyer",
+                    "email": "github@contao.org",
+                    "homepage": "https://contao.org",
+                    "role": "Project leader"
+                }
+            ],
+            "description": "Contao Open Source CMS",
+            "homepage": "https://contao.org",
+            "keywords": [
+                "contao",
+                "core"
+            ],
+            "time": "2013-06-05 03:33:48"
+        },
+        {
+            "name": "twig/twig",
+            "version": "v1.14.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fabpot/Twig.git",
+                "reference": "224fc55635d544a2ec8edb3592be18db5a093f59"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/224fc55635d544a2ec8edb3592be18db5a093f59",
+                "reference": "224fc55635d544a2ec8edb3592be18db5a093f59",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.14-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Twig_": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Armin Ronacher",
+                    "email": "armin.ronacher@active-4.com"
+                }
+            ],
+            "description": "Twig, the flexible, fast, and secure template language for PHP",
+            "homepage": "http://twig.sensiolabs.org",
+            "keywords": [
+                "templating"
+            ],
+            "time": "2013-10-03 06:41:20"
+        }
+    ],
+    "packages-dev": [
+        {
+            "name": "bit3/php-coding-standard",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bit3/php-coding-standard.git",
+                "reference": "f9de2ccca396a66754fa95ee60132b874fc2cdf7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bit3/php-coding-standard/zipball/f9de2ccca396a66754fa95ee60132b874fc2cdf7",
+                "reference": "f9de2ccca396a66754fa95ee60132b874fc2cdf7",
+                "shasum": ""
+            },
+            "require": {
+                "phpmd/phpmd": "1.4.*",
+                "squizlabs/php_codesniffer": "1.4.*"
+            },
+            "type": "coding-standard",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause",
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Tristan Lins",
+                    "email": "tristan.lins@bit3.de",
+                    "homepage": "http://bit3.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "bit3 PHP coding standards",
+            "homepage": "http://bit3.de",
+            "keywords": [
+                "Coding Standard",
+                "php",
+                "phpcs"
+            ],
+            "time": "2013-07-25 07:45:53"
+        },
+        {
+            "name": "pdepend/pdepend",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pdepend/pdepend.git",
+                "reference": "6fcfb7666c95f341b42f02c94a47b3a51ed484e0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pdepend/pdepend/zipball/6fcfb7666c95f341b42f02c94a47b3a51ed484e0",
+                "reference": "6fcfb7666c95f341b42f02c94a47b3a51ed484e0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.3"
+            },
+            "bin": [
+                "src/bin/pdepend"
+            ],
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Official version of pdepend to be handled with Composer",
+            "time": "2013-07-25 19:23:48"
+        },
+        {
+            "name": "phpmd/phpmd",
+            "version": "1.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpmd/phpmd.git",
+                "reference": "7d03a50e937811970751697ad1aea33a1089d66f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpmd/phpmd/zipball/7d03a50e937811970751697ad1aea33a1089d66f",
+                "reference": "7d03a50e937811970751697ad1aea33a1089d66f",
+                "shasum": ""
+            },
+            "require": {
+                "pdepend/pdepend": "*",
+                "php": ">=5.3.0"
+            },
+            "bin": [
+                "src/bin/phpmd"
+            ],
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                "../../pdepend/pdepend/src/main/php",
+                "src/main/php"
+            ],
+            "description": "Official version of PHPMD handled with Composer.",
+            "time": "2012-12-14 12:25:09"
+        },
+        {
+            "name": "squizlabs/php_codesniffer",
+            "version": "1.4.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
+                "reference": "df764a1604607ea61c4eeea5410666e27cb37a8b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/df764a1604607ea61c4eeea5410666e27cb37a8b",
+                "reference": "df764a1604607ea61c4eeea5410666e27cb37a8b",
+                "shasum": ""
+            },
+            "require": {
+                "ext-tokenizer": "*",
+                "php": ">=5.1.2"
+            },
+            "suggest": {
+                "phpunit/php-timer": "dev-master"
+            },
+            "bin": [
+                "scripts/phpcs"
+            ],
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "CodeSniffer.php",
+                    "CodeSniffer/CLI.php",
+                    "CodeSniffer/Exception.php",
+                    "CodeSniffer/File.php",
+                    "CodeSniffer/MultiFileSniff.php",
+                    "CodeSniffer/Report.php",
+                    "CodeSniffer/Reporting.php",
+                    "CodeSniffer/Sniff.php",
+                    "CodeSniffer/Tokens.php",
+                    "CodeSniffer/Reports/",
+                    "CodeSniffer/CommentParser/",
+                    "CodeSniffer/Tokenizers/",
+                    "CodeSniffer/DocGenerators/",
+                    "CodeSniffer/Standards/AbstractPatternSniff.php",
+                    "CodeSniffer/Standards/AbstractScopeSniff.php",
+                    "CodeSniffer/Standards/AbstractVariableSniff.php",
+                    "CodeSniffer/Standards/IncorrectPatternException.php",
+                    "CodeSniffer/Standards/Generic/Sniffs/",
+                    "CodeSniffer/Standards/MySource/Sniffs/",
+                    "CodeSniffer/Standards/PEAR/Sniffs/",
+                    "CodeSniffer/Standards/PSR1/Sniffs/",
+                    "CodeSniffer/Standards/PSR2/Sniffs/",
+                    "CodeSniffer/Standards/Squiz/Sniffs/",
+                    "CodeSniffer/Standards/Zend/Sniffs/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Greg Sherwood",
+                    "role": "lead"
+                }
+            ],
+            "description": "PHP_CodeSniffer tokenises PHP, JavaScript and CSS files and detects violations of a defined set of coding standards.",
+            "homepage": "http://www.squizlabs.com/php-codesniffer",
+            "keywords": [
+                "phpcs",
+                "standards"
+            ],
+            "time": "2013-09-26 00:08:21"
+        }
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "bit3/php-coding-standard": 20
+    },
+    "platform": {
+        "php": ">=5.3"
+    },
+    "platform-dev": [
+
+    ]
+}

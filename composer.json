@@ -1,0 +1,51 @@
+{
+	"name":"bit3/contao-horizontal-rule",
+	"description":"HR content element for Contao Open Source CMS",
+	"keywords":["contao", "content", "horizontal rule"],
+	"type":"contao-module",
+	"homepage":"http://bit3.de",
+	"license":"LGPL-3.0+",
+	"authors":[
+		{
+			"name":"Tristan Lins",
+			"email":"tristan.lins@bit3.de",
+			"homepage":"http://bit3.de",
+			"role":"Developer"
+		}
+	],
+	"support":{
+		"email":"info@bit3.de",
+		"issues":"https://github.com/bit3/contao-horizontal-rule/issues",
+		"wiki":"https://github.com/bit3/contao-horizontal-rule/wiki",
+		"irc":"irc://irc.freenode.org/contao.dev",
+		"source":"https://github.com/bit3/contao-horizontal-rule"
+	},
+	"require":{
+		"php":">=5.3",
+		"contao/core":"3.*",
+		"bit3/contao-meta-palettes":"~1",
+		"bit3/contao-twig":"~1"
+	},
+	"require-dev":{
+		"squizlabs/php_codesniffer":"1.*",
+		"bit3/php-coding-standard":"@dev"
+	},
+	"replace": {
+		"contao-legacy/ce_spacer": "*"
+	},
+	"autoload":{
+		"psr-0": {
+			"Bit3\\Contao\\HorizontalRule": "src/"
+		}
+	},
+	"extra":{
+		"contao": {
+			"symlinks":{
+				"contao":"system/modules/horizontal-rule"
+			},
+			"runonce": [
+				"runonce/update-database.php"
+			]
+		}
+	}
+}
