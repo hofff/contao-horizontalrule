@@ -1,49 +1,57 @@
 {
-	"name":"bit3/contao-horizontal-rule",
-	"description":"HR content element for Contao Open Source CMS",
-	"keywords":["contao", "content", "horizontal rule"],
-	"type":"contao-module",
-	"homepage":"http://bit3.de",
-	"license":"LGPL-3.0+",
-	"authors":[
-		{
-			"name":"Tristan Lins",
-			"email":"tristan.lins@bit3.de",
-			"homepage":"http://bit3.de",
-			"role":"Developer"
+	"name" : "hofff/contao-horizontalrule",
+	"description" : "HR content element for Contao Open Source CMS",
+	"keywords" : [
+		"contao",
+		"content",
+		"horizontal rule"
+	],
+	"type" : "contao-module",
+	"homepage" : "http://hofff.com/",
+	"license" : "LGPL-3.0+",
+	"authors" : [{
+			"name" : "Oliver Hoff",
+			"email" : "oliver@hofff.com",
+			"homepage" : "https://hofff.com/",
+			"role" : "Developer"
+		}, {
+			"name" : "Tristan Lins",
+			"email" : "tristan.lins@bit3.de",
+			"homepage" : "http://bit3.de",
+			"role" : "Creator"
 		}
 	],
-	"support":{
-		"email":"info@bit3.de",
-		"issues":"https://github.com/bit3/contao-horizontal-rule/issues",
-		"wiki":"https://github.com/bit3/contao-horizontal-rule/wiki",
-		"irc":"irc://irc.freenode.org/contao.dev",
-		"source":"https://github.com/bit3/contao-horizontal-rule"
+	"support" : {
+		"email" : "info@hofff.com",
+		"issues" : "https://github.com/hofff/contao-horizontalrule/issues",
+		"irc" : "irc://irc.freenode.org/contao.dev",
+		"source" : "https://github.com/hofff/contao-horizontalrule"
 	},
-	"require":{
-		"php":">=5.3",
-		"contao/core":"3.*",
-		"bit3/contao-meta-palettes":"~1",
-		"bit3/contao-twig":"~1"
+	"require" : {
+		"php" : ">=5.3",
+		"contao/core" : "~3.5",
+		"contao-community-alliance/meta-palettes" : "~1.0",
+		"contao-community-alliance/contao-twig" : "~1.0",
+		"contao-community-alliance/composer-plugin" : "~2.0"
 	},
-	"require-dev":{
-		"squizlabs/php_codesniffer":"1.*",
-		"bit3/php-coding-standard":"@dev"
+	"require-dev" : {
+		"squizlabs/php_codesniffer" : "~1.0"
 	},
-	"replace": {
-		"contao-legacy/ce_spacer": "*"
+	"replace" : {
+		"contao-legacy/ce_spacer" : "self.version",
+		"bit3/contao-horizontal-rule" : "self.version"
 	},
-	"autoload":{
-		"psr-0": {
-			"Bit3\\Contao\\HorizontalRule": "src/"
+	"autoload" : {
+		"psr-0" : {
+			"Hofff" : "src/"
 		}
 	},
-	"extra":{
-		"contao": {
-			"symlinks":{
-				"contao":"system/modules/horizontal-rule"
+	"extra" : {
+		"contao" : {
+			"sources" : {
+				"contao-module" : "system/modules/hofff_horizontalrule"
 			},
-			"runonce": [
+			"runonce" : [
 				"runonce/update-database.php"
 			]
 		}

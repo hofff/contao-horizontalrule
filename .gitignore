@@ -1,14 +1,11 @@
-# OS
-.DS_Store
-Thumbs.db
-
-# IDEs 
-.buildpath
-.project
-.settings/
-.build/
-.idea/
-nbproject/
-
-# Dependencies
-vendor/
+/*
+!/.gitignore
+!/composer.json
+!/composer.lock
+!/.travis.yml
+!/README.md
+!/contao-module/
+!/dev/
+!/publish/
+!/test/
+!/src/
