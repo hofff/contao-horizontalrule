@@ -2,9 +2,9 @@
 
 namespace Hofff\Contao\HorizontalRule;
 
-class ContentHorizontalRule extends \TwigContentElement {
+class ContentHorizontalRule extends \ContentElement {
 
-	protected $strTemplate = 'ce_horizontal_rule';
+	protected $strTemplate = 'ce_hofff_horizontalrule';
 
 	protected function compile() {
 		if($this->addAnchor) {

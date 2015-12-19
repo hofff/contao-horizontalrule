@@ -1,18 +1,23 @@
 <?php
 
-$GLOBALS['TL_DCA']['tl_content']['metapalettes']['hofff_horizontalrule'] = array(
-	'type'				=> array('type'),
-	'horizontalRule'	=> array('addAnchor'),
-	'protected'			=> array(':hide', 'protected'),
-	'expert'			=> array(':hide', 'guests', 'cssID'),
-	'invisible'			=> array(':hide', 'invisible', 'start', 'stop'),
-);
+\System::loadLanguageFile('hofff_horizontalrule');
 
-$GLOBALS['TL_DCA']['tl_content']['metasubpalettes']['addAnchor']
-	= array('anchor', 'anchorTitle');
+$GLOBALS['TL_DCA']['tl_content']['palettes']['__selector__'][]
+	= 'addAnchor';
+
+$GLOBALS['TL_DCA']['tl_content']['palettes']['hofff_horizontalrule']
+	= '{type_legend},type'
+	. ';{hofff_horizontalrule_legend},addAnchor'
+	. ';{protected_legend},protected'
+	. ';{expert_legend},guests,cssID'
+	. ';{invisible_legend},invisible,start,stop'
+	;
+
+$GLOBALS['TL_DCA']['tl_content']['subpalettes']['addAnchor']
+	= 'anchor,anchorTitle';
 
 $GLOBALS['TL_DCA']['tl_content']['fields']['addAnchor'] = array(
-	'label'			=> &$GLOBALS['TL_LANG']['tl_content']['addAnchor'],
+	'label'			=> &$GLOBALS['TL_LANG']['hofff_horizontalrule']['addAnchor'],
 	'inputType'		=> 'checkbox',
 	'eval'			=> array(
 		'submitOnChange'	=> true,
@@ -21,7 +26,7 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['addAnchor'] = array(
 );
 
 $GLOBALS['TL_DCA']['tl_content']['fields']['anchor'] = array(
-	'label'			=> &$GLOBALS['TL_LANG']['tl_content']['anchor'],
+	'label'			=> &$GLOBALS['TL_LANG']['hofff_horizontalrule']['anchor'],
 	'default'		=> 'top',
 	'inputType'		=> 'text',
 	'eval'			=> array(
@@ -33,7 +38,7 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['anchor'] = array(
 );
 
 $GLOBALS['TL_DCA']['tl_content']['fields']['anchorTitle'] = array(
-	'label'			=> &$GLOBALS['TL_LANG']['tl_content']['anchorTitle'],
+	'label'			=> &$GLOBALS['TL_LANG']['hofff_horizontalrule']['anchorTitle'],
 	'default'		=> $GLOBALS['TL_LANG']['MSC']['backToTop'],
 	'inputType'		=> 'text',
 	'eval'			=> array(

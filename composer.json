@@ -30,12 +30,7 @@
 	"require" : {
 		"php" : ">=5.3",
 		"contao/core" : "~3.5",
-		"contao-community-alliance/meta-palettes" : "~1.0",
-		"contao-community-alliance/contao-twig" : "~1.0",
 		"contao-community-alliance/composer-plugin" : "~2.0"
-	},
-	"require-dev" : {
-		"squizlabs/php_codesniffer" : "~1.0"
 	},
 	"replace" : {
 		"contao-legacy/ce_spacer" : "self.version",
