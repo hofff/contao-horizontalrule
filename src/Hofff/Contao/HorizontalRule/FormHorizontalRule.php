@@ -17,6 +17,7 @@ class FormHorizontalRule extends \Widget {
 		$row->addAnchor = $this->hofff_horizontalrule_addAnchor;
 		$row->anchor = $this->hofff_horizontalrule_anchor;
 		$row->anchorTitle = $this->hofff_horizontalrule_anchorTitle;
+		$row->cssID = array('', $this->class);
 		$hr = new ContentHorizontalRule($row);
 		return $hr->generate();
 	}

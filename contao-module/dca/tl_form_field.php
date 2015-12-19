@@ -6,7 +6,10 @@ $GLOBALS['TL_DCA']['tl_form_field']['palettes']['__selector__'][]
 	= 'hofff_horizontalrule_addAnchor';
 
 $GLOBALS['TL_DCA']['tl_form_field']['palettes']['hofff_horizontalrule']
-	= '{type_legend},type;{hofff_horizontalrule_legend},hofff_horizontalrule_addAnchor;{template_legend:hide},customTpl';
+	= '{type_legend},type'
+	. ';{hofff_horizontalrule_legend},hofff_horizontalrule_addAnchor'
+	. ';{template_legend:hide},customTpl'
+	. ';{expert_legend:hide},class';
 
 $GLOBALS['TL_DCA']['tl_form_field']['subpalettes']['hofff_horizontalrule_addAnchor']
 	= 'hofff_horizontalrule_anchor,hofff_horizontalrule_anchorTitle';
