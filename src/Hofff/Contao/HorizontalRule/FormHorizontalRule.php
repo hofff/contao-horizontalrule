@@ -13,7 +13,7 @@ class FormHorizontalRule extends \Widget {
 	}
 
 	public function generate() {
-		$row = new \stdClass;
+		$row = new \ContentModel;
 		$row->addAnchor = $this->hofff_horizontalrule_addAnchor;
 		$row->anchor = $this->hofff_horizontalrule_anchor;
 		$row->anchorTitle = $this->hofff_horizontalrule_anchorTitle;
