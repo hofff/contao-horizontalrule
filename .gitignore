@@ -1,11 +1,1 @@
-/*
-!/.gitignore
-!/composer.json
-!/composer.lock
-!/.travis.yml
-!/README.md
-!/contao-module/
-!/dev/
-!/publish/
-!/test/
-!/src/
+/vendor/

@@ -2,10 +2,21 @@
 
 namespace Hofff\Contao\HorizontalRule;
 
-class ContentHorizontalRule extends \ContentElement {
+use Contao\ContentElement;
 
+/**
+ * @author Oliver Hoff <oliver@hofff.com>
+ */
+class ContentHorizontalRule extends ContentElement {
+
+	/**
+	 * @var string
+	 */
 	protected $strTemplate = 'ce_hofff_horizontalrule';
 
+	/**
+	 * @see \Contao\ContentElement::compile()
+	 */
 	protected function compile() {
 		if($this->addAnchor) {
 			$this->Template->anchor			= $this->anchor;

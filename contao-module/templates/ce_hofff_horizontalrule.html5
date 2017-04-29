@@ -2,7 +2,7 @@
 <?php if($this->anchor): ?>
   <div class="<?= $this->class; ?>">
     <a title="<?= $this->anchorTitle; ?>"
-        href="<?= \Environment::get('request') . '#' . $this->anchor; ?>"
+        href="<?= \Contao\Environment::get('request') . '#' . $this->anchor; ?>"
     ><?= $this->anchorTitle; ?></a>
   </div>
 <?php endif; ?>
