@@ -27,7 +27,13 @@
 			"email": "tristan.lins@bit3.de",
 			"homepage": "http://bit3.de",
 			"role": "Creator"
-		}
+		},
+		{
+			"name": "Cliff Parnitzky",
+			"homepage": "https://hofff.com",
+			"email": "cliff@hofff.com",
+			"role": "Developer"
+		},
 	],
 	"support": {
 		"email": "info@hofff.com",
@@ -36,8 +42,8 @@
 	},
 	"require": {
 		"php": "^5.6 || ^7.0",
-		"contao/core": "^3.5 || ^4.3",
-		"contao-community-alliance/composer-plugin": "^2.0 || ^3.0"
+		"contao/core-bundle":"~3.5 || ~4.4",
+		"contao-community-alliance/composer-plugin":"~2.4 || ~3.0"
 	},
 	"replace": {
 		"contao-legacy/ce_spacer": "self.version",
