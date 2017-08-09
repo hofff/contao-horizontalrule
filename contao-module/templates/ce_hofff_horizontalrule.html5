@@ -1,8 +1,8 @@
-<hr<?= $this->cssID; ?> class="<?= $this->class; ?>">
+<div<?= $this->cssID; ?> class="<?= $this->class; ?>">
+<hr>
 <?php if($this->anchor): ?>
-  <div class="<?= $this->class; ?>">
     <a title="<?= $this->anchorTitle; ?>"
-        href="<?= \Contao\Environment::get('request') . '#' . $this->anchor; ?>"
+        href="<?= \Environment::get('request') . '#' . $this->anchor; ?>"
     ><?= $this->anchorTitle; ?></a>
-  </div>
 <?php endif; ?>
+</div>
