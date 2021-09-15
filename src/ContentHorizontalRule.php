@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Hofff\Contao\HorizontalRule;
 
 use Contao\ContentElement;
@@ -7,24 +9,21 @@ use Contao\ContentElement;
 /**
  * @author Oliver Hoff <oliver@hofff.com>
  */
-class ContentHorizontalRule extends ContentElement {
+class ContentHorizontalRule extends ContentElement
+{
+    /**
+     * @var string
+     */
+    protected $strTemplate = 'ce_hofff_horizontalrule';
 
-	/**
-	 * @var string
-	 */
-	protected $strTemplate = 'ce_hofff_horizontalrule';
-
-	/**
-	 * @see \Contao\ContentElement::compile()
-	 */
-	protected function compile() {
-		if($this->addAnchor) {
-			$this->Template->anchor			= $this->anchor;
-			$this->Template->anchorTitle	= $this->anchorTitle;
-		} else {
-			$this->Template->anchor			= false;
-			$this->Template->anchorTitle	= '';
-		}
-	}
-
+    protected function compile(): void
+    {
+        if ($this->addAnchor) {
+            $this->Template->anchor      = $this->anchor;
+            $this->Template->anchorTitle = $this->anchorTitle;
+        } else {
+            $this->Template->anchor      = false;
+            $this->Template->anchorTitle = '';
+        }
+    }
 }

@@ -1,3 +1,3 @@
 <?php
 
-Hofff\Contao\HorizontalRule\Database\Updater::runLegacyUpdate();
+\Hofff\Contao\HorizontalRule\Migration\HorizontalRuleMigration::runLegacyUpdate();

@@ -1,0 +1,4 @@
+
+<div class="<?= $this->prefix ?>">
+    <?= $this->generate() ?>
+</div>
