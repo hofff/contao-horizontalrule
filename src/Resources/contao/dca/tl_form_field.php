@@ -37,7 +37,7 @@ $GLOBALS['TL_DCA']['tl_form_field']['fields']['hofff_horizontalrule_anchor'] = [
 
 $GLOBALS['TL_DCA']['tl_form_field']['fields']['hofff_horizontalrule_anchorTitle'] = [
     'label'     => &$GLOBALS['TL_LANG']['hofff_horizontalrule']['anchorTitle'],
-    'default'   => $GLOBALS['TL_LANG']['MSC']['backToTop'],
+    'default'   => &$GLOBALS['TL_LANG']['MSC']['backToTop'],
     'inputType' => 'text',
     'eval'      => [
         'mandatory' => true,
