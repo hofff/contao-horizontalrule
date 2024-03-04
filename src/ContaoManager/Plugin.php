@@ -12,12 +12,14 @@ use Hofff\Contao\HorizontalRule\HofffContaoHorizontalRuleBundle;
 
 final class Plugin implements BundlePluginInterface
 {
+    /** {@inheritDoc} */
     public function getBundles(ParserInterface $parser): array
     {
+        // phpcs:ignore Squiz.Arrays.ArrayDeclaration.MultiLineNotAllowed
         return [
             BundleConfig::create(HofffContaoHorizontalRuleBundle::class)
                 ->setLoadAfter([ContaoCoreBundle::class])
-                ->setReplace(['hofff_horizontalrule'])
+                ->setReplace(['hofff_horizontalrule']),
         ];
     }
 }

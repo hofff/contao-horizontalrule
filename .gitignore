@@ -1,2 +1,5 @@
-/vendor/
-composer.lock
+/vendor
+/composer.lock
+
+/.phpcq
+.phpcs-cache

@@ -8,18 +8,19 @@ use Contao\ContentModel;
 use Contao\Widget;
 
 /**
- * @author Oliver Hoff <oliver@hofff.com>
+ * @property string|bool $hofff_horizontalrule_addAnchor
+ * @property string      $hofff_horizontalrule_anchor
+ * @property string      $hofff_horizontalrule_anchorTitle
+ * @psalm-suppress PropertyNotSetInConstructor
  */
-class FormHorizontalRule extends Widget
+final class FormHorizontalRule extends Widget
 {
-    /**
-     * @var string
-     */
+    /** @var string */
+    // phpcs:ignore SlevomatCodingStandard.TypeHints.PropertyTypeHint.MissingNativeTypeHint
     protected $strTemplate = 'form_hofff_horizontalrule';
 
-    /**
-     * @var string
-     */
+    /** @var string */
+    // phpcs:ignore SlevomatCodingStandard.TypeHints.PropertyTypeHint.MissingNativeTypeHint
     protected $strPrefix = 'widget widget-hr';
 
     public function validate(): void
@@ -35,8 +36,6 @@ class FormHorizontalRule extends Widget
         $row->anchorTitle = $this->hofff_horizontalrule_anchorTitle;
         $row->cssID       = ['', $this->class];
 
-        $hr = new ContentHorizontalRule($row);
-
-        return $hr->generate();
+        return (new ContentHorizontalRule($row))->generate();
     }
 }

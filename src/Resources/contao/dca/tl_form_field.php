@@ -2,7 +2,10 @@
 
 declare(strict_types=1);
 
-\Contao\System::loadLanguageFile('hofff_horizontalrule');
+use Contao\System;
+
+System::loadLanguageFile('default');
+System::loadLanguageFile('hofff_horizontalrule');
 
 $GLOBALS['TL_DCA']['tl_form_field']['palettes']['__selector__'][] = 'hofff_horizontalrule_addAnchor';
 
@@ -17,9 +20,7 @@ $GLOBALS['TL_DCA']['tl_form_field']['subpalettes']['hofff_horizontalrule_addAnch
 $GLOBALS['TL_DCA']['tl_form_field']['fields']['hofff_horizontalrule_addAnchor'] = [
     'label'     => &$GLOBALS['TL_LANG']['hofff_horizontalrule']['addAnchor'],
     'inputType' => 'checkbox',
-    'eval'      => [
-        'submitOnChange' => true,
-    ],
+    'eval'      => ['submitOnChange' => true],
     'sql'       => 'char(1) NOT NULL default \'\'',
 ];
 

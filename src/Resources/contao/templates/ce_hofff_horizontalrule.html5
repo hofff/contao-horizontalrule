@@ -2,7 +2,7 @@
 <hr>
 <?php if($this->anchor): ?>
     <a title="<?= $this->anchorTitle ?>"
-        href="<?= \Environment::get('request') . '#' . $this->anchor ?>"
+        href="<?= $this->request . '#' . $this->anchor ?>"
     ><?= $this->anchorTitle ?></a>
 <?php endif; ?>
 </div>
