@@ -6,6 +6,7 @@ namespace Hofff\Contao\HorizontalRule;
 
 use Contao\ContentElement;
 use Contao\Environment;
+use Override;
 
 /**
  * @property string|bool $addAnchor
@@ -20,6 +21,7 @@ final class ContentHorizontalRule extends ContentElement
     protected $strTemplate = 'ce_hofff_horizontalrule';
 
     /** @psalm-suppress UndefinedThisPropertyFetch */
+    #[Override]
     protected function compile(): void
     {
         $this->Template->request = Environment::get('request');

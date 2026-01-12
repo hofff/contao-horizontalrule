@@ -6,6 +6,7 @@ namespace Hofff\Contao\HorizontalRule;
 
 use Contao\ContentModel;
 use Contao\Widget;
+use Override;
 
 /**
  * @property string|bool $hofff_horizontalrule_addAnchor
@@ -23,10 +24,12 @@ final class FormHorizontalRule extends Widget
     // phpcs:ignore SlevomatCodingStandard.TypeHints.PropertyTypeHint.MissingNativeTypeHint
     protected $strPrefix = 'widget widget-hr';
 
+    #[Override]
     public function validate(): void
     {
     }
 
+    #[Override]
     public function generate(): string
     {
         $row              = new ContentModel();

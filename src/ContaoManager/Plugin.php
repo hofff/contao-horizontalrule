@@ -9,10 +9,12 @@ use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
 use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
 use Hofff\Contao\HorizontalRule\HofffContaoHorizontalRuleBundle;
+use Override;
 
 final class Plugin implements BundlePluginInterface
 {
     /** {@inheritDoc} */
+    #[Override]
     public function getBundles(ParserInterface $parser): array
     {
         // phpcs:ignore Squiz.Arrays.ArrayDeclaration.MultiLineNotAllowed
